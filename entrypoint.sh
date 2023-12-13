@@ -97,6 +97,7 @@ case $5 in
 
     amplify env add $9 --amplify "$AMPLIFY" --providers "$PROVIDERS" --yes
     amplify status
+    amplify pull --yes
     ;;
 
   delete_env)
