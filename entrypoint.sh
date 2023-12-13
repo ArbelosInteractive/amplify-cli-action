@@ -49,6 +49,10 @@ case $5 in
   push)
     amplify push $9 --yes
     ;;
+  
+  pull)
+    amplify pull $9 --yes
+    ;;
 
   publish)
     amplify publish $9 --yes
@@ -97,7 +101,6 @@ case $5 in
 
     amplify env add $9 --amplify "$AMPLIFY" --providers "$PROVIDERS" --yes
     amplify status
-    amplify pull --yes
     ;;
 
   delete_env)
